@@ -1,0 +1,182 @@
+/*TYPED
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    display: inline-block;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+*/
+
+/*FONTS*/
+@font-face {
+    font-family: nexa-light;
+    src: url('Nexa Light.otf');
+}
+
+@font-face {
+    font-family: nexa-heavy;
+    src: url('Nexa Bold.otf');
+}
+
+/*GENERAL STYLES*/
+h1 {
+  font-size: 72px;
+  font-family: 'nexa-light';
+  color: black;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: 'nexa-light';
+  color: black;
+}
+
+body {
+  margin:0;
+  padding-bottom: 40px;
+}
+
+.PlainText {
+  font-size: 24px;
+  font-family: 'nexa-light';
+  color: black;
+  line-height: 36px;
+}
+
+.Container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: none;
+}
+
+.Container2 {
+  background-color: white;
+  width: 75%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 15px;
+  box-shadow: 1px 1px 5px #888888;
+  margin-bottom: 10%;
+  overflow: hidden;
+}
+
+.LineSeparator {
+  width: 50%;
+  background-color: black;
+  margin: auto;
+  margin-top: 10px;
+  height: 1px;
+}
+
+#contactButton div {
+  padding: 10px;
+  width: 15%;
+  font-size: 24px;
+  font-family: 'nexa-light';
+  color: white;
+  margin: auto;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#contactButton {
+  text-decoration: none;
+
+}
+
+/*LOGO STUFF*/
+.BromineBox {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+
+}
+
+.BromineTitle {
+  font-family: 'nexa-light', sans-serif;
+  font-weight: bold;
+  top: 0;
+  margin-top: 5px;
+  font-size: 72px;
+}
+
+.BromineNumber {
+  font-family: 'nexa-light', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  top: 0px;
+  margin-top: -75px;
+}
+
+/*TITLE STUFF*/
+#title {
+  margin-top: 20%;
+}
+
+#about-us {
+  margin-top: 25%;
+}
+
+/*PROJECT STUFF*/
+.ProjectList {
+  list-style: none;
+  text-align: left;
+}
+
+.ProjectList li p {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.ProjectList li a img {
+  width: 25%;
+  padding-bottom: 0px;
+  align-self: left;
+}
+
+/*SERVICES STUFF*/
+.ServicesList {
+  display: table;
+  list-style: none;
+  text-align: left;
+}
+
+.ServicesList li {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ServicesList li p {
+  display: inline-block;
+  padding-bottom: 50px;
+}
+
+.ServicesList li img {
+  width: 25%;
+  padding-bottom: 0px;
+  align-self: left;
+}
