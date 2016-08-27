@@ -1,30 +1,3 @@
-/*TYPED
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    display: inline-block;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-*/
-
 /*FONTS*/
 @font-face {
     font-family: nexa-light;
@@ -103,6 +76,35 @@ body {
 
 }
 
+/*LISTS*/
+.ListItem {
+  overflow: hidden;
+}
+
+.ListItem div:first-child {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-top: 20px;
+}
+
+.ListItem div:first-child img {
+  float: left;
+  width: 100%;
+}
+
+.ListItem div:nth-child(2) {
+  display:inline-block;
+  float: right;
+  width: 70%;
+  padding: 5px;
+}
+
+.ListItem div:nth-child(2) p {
+  float: right;
+  text-align: left
+}
+
 /*LOGO STUFF*/
 .BromineBox {
   border-style: solid;
@@ -141,42 +143,8 @@ body {
   margin-top: 25%;
 }
 
-/*PROJECT STUFF*/
-.ProjectList {
-  list-style: none;
-  text-align: left;
-}
-
-.ProjectList li p {
+/*PORTFOLIO STUFF*/
+.PortfolioBanner {
+  width: 10%;
   display: inline-block;
-  margin-top: 0px;
-}
-
-.ProjectList li a img {
-  width: 25%;
-  padding-bottom: 0px;
-  align-self: left;
-}
-
-/*SERVICES STUFF*/
-.ServicesList {
-  display: table;
-  list-style: none;
-  text-align: left;
-}
-
-.ServicesList li {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.ServicesList li p {
-  display: inline-block;
-  padding-bottom: 50px;
-}
-
-.ServicesList li img {
-  width: 25%;
-  padding-bottom: 0px;
-  align-self: left;
 }
