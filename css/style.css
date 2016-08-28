@@ -34,6 +34,21 @@ body {
   line-height: 36px;
 }
 
+.BoldText {
+  font-size: 24px;
+  font-family: 'nexa-heavy';
+  color: black;
+  line-height: 36px;
+}
+
+.BoldText a {
+  font-size: 24px;
+  font-family: 'nexa-heavy';
+  color: black;
+  line-height: 36px;
+  text-decoration: none;
+}
+
 .Container {
   width: 100%;
   margin: auto;
@@ -100,9 +115,12 @@ body {
   padding: 5px;
 }
 
-.ListItem div:nth-child(2) p {
-  float: right;
-  text-align: left
+.ListItem div:nth-child(2) .BoldText {
+  text-align: center;
+}
+
+.ListItem div:nth-child(2) .PlainText {
+  text-align: left;
 }
 
 /*LOGO STUFF*/
