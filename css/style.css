@@ -25,7 +25,8 @@ h2 {
 body {
   margin:0;
   padding-bottom: 40px;
-  background-image: url('css/Images/asanoah-400px.png');
+  background-color: blue;
+  /*background-image: url('css/Images/asanoah-400px.png');*/
 }
 
 .PlainText {
