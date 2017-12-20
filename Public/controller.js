@@ -13,8 +13,10 @@ app.controller('templateCtrl', function($scope) {
     };
     $scope.next_card = function(){
 
-      $( "#appcontainer" ).append( "<div ng-include=\"'Cards/testCard.html'\"></div>");
-
     };
 
+});
+
+$(document).ready(function(e) {
+  $('#appcontainer').load('testCard.html',function(){alert('loaded')});
 });
