@@ -13,7 +13,7 @@ app.controller('templateCtrl', function($scope) {
     };
     $scope.next_card = function(){
 
-      $( "#appcontainer" ).load( "Cards/testCard.html");
+      $( "#appcontainer" ).append( "<div ng-include=\"'Cards/testCard.html'\"></div>");
 
     };
 
