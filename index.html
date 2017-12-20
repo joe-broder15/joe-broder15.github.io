@@ -1,197 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Bromine Software</title>
-    <link rel="icon" type="image/png" href="css/Images/Bromine.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/typed.min.js"></script>
-  </head>
-  <body>
 
-      <div class="Container" id="landing">
+<head>
+    <meta charset="utf-8" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voice Power</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="Public/app.js"></script>
+    <script src="Public/controller.js"></script>
+</head>
 
-        <h1 id="title">Bromine Software</h1>
-        <p class="PlainText" >We make apps.</p>
+<body>
 
-        <!--a href="#" id="contactButton"><div >Contact</div></a-->
+    <!---Main container where the app is contained--->
+    <div class="container" id="appcontainer" ng-app="app">
 
-        <div class="LineSeparator"></div>
-        <a href="#about-us"><img src="css/Images/downArrow.svg" style="width: 64px" alt=""/></a>
+        <div ng-include="'Cards/templateSelector.html'"></div>
 
-        <!--WHO ARE WE-->
-        <div class="Container2" id="about-us" style="">
-          <h2>Who are we?</h2>
-          <img src="css/Images/threeApps.png" style="width: 45%" alt="img"/>
-          <p style="" class="PlainText">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.
-          </p>
-        </div>
+    </div>
 
-        <!--SERVICES-->
-        <div class="Container2" id="services">
+</body>
 
-          <h2>Services</h2>
-
-          <!--IOS-->
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/Swift.png" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  Full Stack Mobile Development
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <!--WEB-->
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/html.png" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  Full Stack Web Development
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <!--GD-->
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/photoshop-cc.svg" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  Graphic Design
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-        </div>
-
-        <!--TEAM-->
-        <div class="Container2" id="team">
-
-          <h2>The Team</h2>
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/joe.jpeg" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  Joe Broder
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/kanye.jpeg" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  Kanye West
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/god.png" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  Dennis Ritchie
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-
-        </div>
-
-        <!--PORTFOLIO-->
-        <div class="Container2" id="projects">
-          <h2>Portfolio</h2>
-          <div class="" style="width: 100%">
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-            <img class="PortfolioBanner" src="css/Images/shoutout.png" alt="" />
-          </div>
-
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/shoutout.png" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  <a href="#">Shout-Out</a>
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/shoutout.png" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  <a href="#">Shout-Out</a>
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <div class="ListItem">
-            <div>
-                <img src="css/Images/shoutout.png" alt="img"/>
-            </div>
-            <div>
-                <p class="BoldText">
-                  <a href="#">Shout-Out</a>
-                </p>
-                <p class="PlainText">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                </p>
-            </div>
-          </div>
-
-          <p class="BoldText">
-            <a href="#">More</a>
-          </p>
-
-      </div>
-
-  </body>
 </html>

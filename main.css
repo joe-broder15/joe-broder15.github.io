@@ -1,0 +1,21 @@
+body{
+  background-image: url("assets/gplaypattern.png");
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+}
+
+.card-bottom-strip{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#appcontainer{
+  background-color: white;
+  box-shadow: 0px 0px 10px #666666;
+  padding: 20px;
+  border-radius: 5px;
+}

@@ -1,0 +1,27 @@
+<!---Card for the initial template selector--->
+<div class="card" ng-controller="templateCtrl">
+  <div class="card-body">
+    <h4 class="card-title">What type of power do you want to build?</h4>
+
+    <!---Dropdown for selecting type of power--->
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-bind="template">
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#" ng-click="change_template('Alexa Flash Briefing')">Alexa Flash Briefing</a>
+        <a class="dropdown-item" href="#" ng-click="change_template('Alexa Interaction')">Alexa Interaction</a>
+      </div>
+    </div>
+
+    <!--Information about each power-->
+    <br>
+    <p ng-bind="powerInfo"></p>
+
+    <!---Flexbox container that holds the "next" button--->
+    <div class="card-bottom-strip">
+      <button type="button" class="button btn btn-primary" name="button" ng-click="next_card()">Next</button>
+    </div>
+
+  </div>
+</div>
